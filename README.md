@@ -121,4 +121,4 @@ Make sure to match these versions to avoid unexpected behavior.
 ---
 
 ## License
-This project is licensed under the MIT License.
+Copyright © 2024 Danmarks Tekniske Universitet. This project is licensed under the MIT License (see LICENSE.txt file).
