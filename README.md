@@ -2,6 +2,11 @@
 
 This repository provides a Python-based solution for computing the volume of objects from LiDAR scans. The workflow consists of two main steps: object identification within the scan and volume estimation using a 3D surface reconstruction technique.
 
+No datafiles are included in the repository. The method was tested on data in .obj format. This can for example be optained from the 3D scanner app on IOS. 
+The directories are setup, such that datafiles should be saved as subdirectories called "sample1,sample2...".
+In each data sample directory include the scan to be loaded. From the 3D scanner app these are called "textured_output.jpg", "textured_output.mtl" and "textured_output.obj". 
+The method is agnostic to the datatype, as long as it can be loaded into the model as either a point cloud or a mesh with the Open3D library.
+
 ## Features
 - **Two-step DBSCAN Clustering:** Identify and isolate the target object from the scanned LiDAR scene.
 - **Poisson Surface Reconstruction:** Reconstruct the object's surface and compute the enclosed volume using signed volume calculations.
